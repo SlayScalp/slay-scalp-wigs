@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slay Scalp Wigs - Admin Dashboard</title>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</head>
+<body>
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: 'git-gateway',
+          branch: 'main',
+        },
+        media_folder: 'images/uploads',
+        public_folder: '/images/uploads',
+        collections: [
+          {
+            name: 'products',
+            label: '📦 Products',
+            folder: 'data/products',
+            create: true,
+            slug: '{{slug}}',
+            fields: [
+              { name: 'name', label: 'Product Name', widget: 'string', required: true },
+              { name: 'price', label: 'Price ($)', widget: 'number', required: true, value_type: 'int' },
+              { name: 'image', label: 'Product Image', widget: 'image', required: true },
+              { name: 'length', label: 'Length', widget: 'string', required: true, default: '36 inches' },
+              { name: 'texture', label: 'Texture', widget: 'string', required: true, default: 'Deep Wave' },
+              { name: 'density', label: 'Density', widget: 'string', required: true, default: '250%' },
+              { name: 'details', label: 'Details', widget: 'text', required: false },
+              { name: 'status', label: 'Status', widget: 'select', options: ['in_stock', 'sold_out'], default: 'in_stock', required: true },
+            ],
+          },
+          {
+            name: 'videos',
+            label: '🎥 Videos',
+            folder: 'data/videos',
+            create: true,
+            slug: '{{slug}}',
+            fields: [
+              { name: 'thumbnail', label: 'Video Thumbnail', widget: 'image', required: true },
+              { name: 'link', label: 'Video Link (TikTok/Instagram)', widget: 'string', required: true },
+              { name: 'title', label: 'Video Title', widget: 'string', required: false },
+            ],
+          },
+        ],
+      }
+    });
+  </script>
+</body>
+</html>

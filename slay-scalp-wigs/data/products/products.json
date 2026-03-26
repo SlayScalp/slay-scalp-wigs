@@ -1,0 +1,34 @@
+{
+  "entries": [
+    {
+      "name": "36\" Deep Wave Wig – 250% Density",
+      "price": 380,
+      "image": "https://image.qwenlm.ai/public_source/cb0ce228-dcd1-4a4b-80cf-4e40ba8db2b1/172c36386-29fe-47d6-96d3-e0b6e777f46d.png",
+      "length": "36 inches",
+      "texture": "Deep Wave",
+      "density": "250%",
+      "details": "Pre-plucked & bleached knots",
+      "status": "in_stock"
+    },
+    {
+      "name": "30\" Body Wave Wig – 200% Density",
+      "price": 260,
+      "image": "https://image.qwenlm.ai/public_source/cb0ce228-dcd1-4a4b-80cf-4e40ba8db2b1/1fa68eda5-e85e-4179-bb9a-a9ef723c4782.png",
+      "length": "30 inches",
+      "texture": "Body Wave",
+      "density": "200%",
+      "details": "Pre-plucked & bleached knots",
+      "status": "in_stock"
+    },
+    {
+      "name": "36\" Bone Straight Wig – 250% Density",
+      "price": 340,
+      "image": "https://image.qwenlm.ai/public_source/cb0ce228-dcd1-4a4b-80cf-4e40ba8db2b1/13559e148-b4e9-4472-a6ec-4690b4c4067e.png",
+      "length": "36 inches",
+      "texture": "Bone Straight",
+      "density": "250%",
+      "details": "Pre-plucked & bleached knots",
+      "status": "in_stock"
+    }
+  ]
+}
